@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/06/54/86/02/240_F_654860252_K6EhyvlRpRFmpo362cVujQeW3L1A13Ck.jpg");
+    background-size: cover;
+}
+
+header {
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.categories {
+    width: 30%;
+    float: left;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.items {
+    width: 100%;
+    float: right;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.category h2:hover {
+    color: #007BFF;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18%;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item p {
+    margin-bottom: 10px;
+}
+
+.item .price {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
+
+
+
+#chatbot:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Slideshow styles */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Chatbot styles */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Style for the chatFrame iframe */
+#chatFrame {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 80px; /* Adjust as needed */
+    width: 350px;
+    height: 430px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add box shadow for a popup effect */
+}
